@@ -1,0 +1,86 @@
+.navbar-brand {
+  font-size: 26px;
+  font-family: auto;
+}
+
+.sec-content {
+  padding: 5% 0;
+  background-color: #c1c1c0;
+}
+
+.sec-title {
+  font-family: auto;
+  font-size: 50px;
+  color: #434b55;
+  padding: 5px 0;
+}
+
+.data-list {
+  width: 21%;
+  background-color: white;
+  margin: 5px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.main-circle {
+  height: 65px;
+  position: relative;
+}
+
+#circle {
+  position: absolute;
+  width: 70px;
+  top: 10%;
+  left: 5%;
+  height: 100%;
+  background-color: #c1c1c0;
+  border-radius: 50%;
+}
+
+#small-circle {
+  margin-top: 25%;
+  margin-left: 25%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #bb0303;
+  border-radius: 50%;
+}
+
+.footer-btn {
+  margin: 6% 5px;
+  width: 10%;
+  border-radius: 25px;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-family: auto;
+}
+
+.sub-header {
+  color: white;
+  text-align: center;
+  font-family: auto;
+}
+
+@media screen and (max-width: 1110px) {
+  .data-list {
+    width: 29% !important;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .data-list {
+    width: 44% !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .data-list {
+    width: 94% !important;
+  }
+}

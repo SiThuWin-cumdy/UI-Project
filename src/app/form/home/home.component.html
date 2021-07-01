@@ -1,0 +1,69 @@
+<router-outlet></router-outlet>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand ml-5" >Header</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="goToAboutPage()">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="goToContactPage()">Contact</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-5">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="goToSignUpPage()">SignUp</button>
+    </form>
+  </div>
+</nav>
+<div class="row sec-content">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  text-right">
+    <h1 class="sec-title"><b>Lorem</b></h1>
+    <h1 class="sec-title"><b>Ipsum</b></h1>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <img src="../assets/images/icon_one.jpg" width="30%" height="100%">
+  </div>
+
+</div>
+
+<div class="" style="background-color: #585d71;">
+  <div class="col-md-12">
+    <h2 class="header">Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+  </div>
+  <div class="col-md-12">
+    <p class="sub-header">Vestibulum sed luctus orci. In a est tempor, lobortis lorem ac,
+      <br>
+      lacinia ligula. Vestibulum fringilla id lectus quis sodales.
+      <br>
+      Pellentesque ornare accumsan erat ut fermentum.
+    </p>
+  </div>
+  <div class="row" style="margin: 0 5%;">
+    <div class="data-list" id="data_{{i+1}}" *ngFor="let data of dataList;let i = index" (click)="clickBox(i+1)">
+      <div class="main-circle">
+        <div id="circle" *ngIf="data.icon && data.icon == 'round'">
+          <div id="small-circle">
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 20%;padding: 10px;">{{data.description}} </p>
+    </div>
+  </div>
+  <div class="col-md-12 text-center">
+    <button class="btn btn-primary footer-btn">Back</button>
+    <button class="btn btn-success footer-btn">Next</button>
+  </div>
+</div>
